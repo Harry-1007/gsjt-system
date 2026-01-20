@@ -1,0 +1,1842 @@
+{
+  "system_metadata": {
+    "system_name": "Gamified Situational Judgement Test (GSJT) for PMP Internship Selection",
+    "version": "2.0",
+    "competencies": [
+      "integrity_and_honesty",
+      "problem_solving_under_stress",
+      "effective_communication",
+      "discipline"
+    ],
+    "total_scenarios": 30,
+    "estimated_duration_minutes": 20,
+    "categories": {
+      "A": "Personnel Wing & Public Relations Wing Projects",
+      "B": "Regional Projects",
+      "C": "Technical & Management Projects"
+    }
+  },
+  "scenarios": [
+    {
+      "scenario_id": "SCENARIO_A001",
+      "category": "A",
+      "title": "Confidential Recruitment Data Leak",
+      "title_zh_hk": "機密招聘數據洩露",
+      "description": "While working on the PMP Internship System review project, you accidentally receive an email containing confidential recruitment statistics and candidate personal information. The email was sent to you by mistake from another division. Your team member suggests forwarding it to the project supervisor, but you notice the data could help improve your analysis. The deadline for your proposal is in 2 days. What do you do?",
+      "description_zh_hk": "在進行PMP實習系統審查項目時，您意外收到一封包含機密招聘統計數據和候選人個人資訊的電子郵件。這封郵件是其他部門誤發給您的。您的團隊成員建議將其轉發給項目主管，但您注意到這些數據可能有助於改進您的分析。您的提案截止日期還有2天。您會怎麼做？",
+      "illustration_id": "ILL_A001",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately delete the email, report the incident to your supervisor, and continue your analysis using only authorized data sources.",
+          "text_zh_hk": "立即刪除郵件，向主管報告此事，並僅使用授權數據源繼續您的分析。",
+          "next_scenario_id": "SCENARIO_A002",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Use the data for your analysis but don't mention it in your report, as it's not officially provided.",
+          "text_zh_hk": "將數據用於分析，但在報告中不提及，因為這不是正式提供的。",
+          "next_scenario_id": "SCENARIO_A002",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Forward the email to your supervisor and ask if you can use the data, explaining how it would benefit the analysis.",
+          "text_zh_hk": "將郵件轉發給主管並詢問是否可以使用該數據，解釋它如何有益於分析。",
+          "next_scenario_id": "SCENARIO_A002",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Keep the email but don't use it, and inform your supervisor after you submit your proposal to avoid delays.",
+          "text_zh_hk": "保留郵件但不使用，並在提交提案後告知主管以避免延誤。",
+          "next_scenario_id": "SCENARIO_A002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "discipline", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_A002",
+      "category": "A",
+      "title": "Team Conflict on Research Methodology",
+      "title_zh_hk": "研究方法上的團隊衝突",
+      "description": "You're working on the public relations strategies research project with another intern. Your partner insists on using only quantitative data, while you believe qualitative interviews are essential. The deadline is approaching, and you've spent 3 days arguing without progress. Your supervisor expects a draft tomorrow morning. What is your approach?",
+      "description_zh_hk": "您正在與另一名實習生進行公共關係策略研究項目。您的搭檔堅持只使用定量數據，而您認為定性訪談是必要的。截止日期臨近，您已經爭論了3天而沒有進展。您的主管期望明天早上看到草稿。您會採取什麼方法？",
+      "illustration_id": "ILL_A002",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Propose a mixed-methods approach combining both quantitative and qualitative data, present evidence for why this is better, and suggest dividing tasks to meet the deadline.",
+          "text_zh_hk": "提出結合定量和定性數據的混合方法，提供證據說明為什麼這樣更好，並建議分工以滿足截止日期。",
+          "next_scenario_id": "SCENARIO_A003",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Give in to your partner's approach to avoid further conflict and meet the deadline, even though you disagree.",
+          "text_zh_hk": "為了避免進一步衝突並滿足截止日期，即使您不同意，也接受搭檔的方法。",
+          "next_scenario_id": "SCENARIO_A003",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Work separately on your preferred methodology and combine both approaches in the final report without discussing it further.",
+          "text_zh_hk": "分別按照您偏好的方法工作，並在最終報告中結合兩種方法，不再進一步討論。",
+          "next_scenario_id": "SCENARIO_A003",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Request an urgent meeting with your supervisor to mediate the disagreement and get guidance on the methodology.",
+          "text_zh_hk": "請求與主管緊急會面以調解分歧並獲得方法論指導。",
+          "next_scenario_id": "SCENARIO_A003",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "problem_solving_under_stress", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_A003",
+      "category": "A",
+      "title": "Mainland Student Engagement Strategy Deadline",
+      "title_zh_hk": "內地學生參與策略截止日期",
+      "description": "You're working on a project supporting Hong Kong students studying in Mainland China. Your team of 3 interns has collected extensive data, but the analysis is incomplete. The project deadline is tomorrow, and one team member hasn't submitted their section. You discover they've been working on a different task assigned by another supervisor. What do you do?",
+      "description_zh_hk": "您正在進行一個支持在內地學習的香港學生的項目。您的3人實習生團隊已收集了大量數據，但分析尚未完成。項目截止日期是明天，一名團隊成員尚未提交他們的部分。您發現他們一直在處理另一位主管分配的任務。您會怎麼做？",
+      "illustration_id": "ILL_A003",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately contact the missing team member, explain the urgency, and offer to help complete their section while coordinating with both supervisors to resolve the conflict.",
+          "text_zh_hk": "立即聯繫缺失的團隊成員，解釋緊迫性，並主動幫助完成他們的部分，同時與兩位主管協調以解決衝突。",
+          "next_scenario_id": "SCENARIO_A004",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Complete the missing section yourself without informing anyone, to ensure the project is submitted on time.",
+          "text_zh_hk": "在不告知任何人的情況下自己完成缺失的部分，以確保項目按時提交。",
+          "next_scenario_id": "SCENARIO_A004",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Report the team member to your supervisor and request an extension, blaming them for the delay.",
+          "text_zh_hk": "向主管報告該團隊成員並請求延期，將延誤歸咎於他們。",
+          "next_scenario_id": "SCENARIO_A004",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Submit the incomplete project on time, noting in the report which sections are missing and why.",
+          "text_zh_hk": "按時提交不完整的項目，在報告中註明哪些部分缺失及原因。",
+          "next_scenario_id": "SCENARIO_A004",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        }
+      ],
+      "competency_tags": ["discipline", "effective_communication", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_A004",
+      "category": "A",
+      "title": "Recruitment Process Optimization Pressure",
+      "title_zh_hk": "招聘流程優化壓力",
+      "description": "While working on a recruitment optimization project, you've identified a critical inefficiency in the selection process. However, your supervisor seems resistant to change and dismisses your findings during a presentation. Senior management is expecting recommendations next week. You feel your research is being ignored. How do you proceed?",
+      "description_zh_hk": "在進行一個招聘優化項目時，您發現了選擇流程中的關鍵低效問題。然而，您的主管似乎抗拒變革，並在演示期間駁回了您的發現。高級管理層期望下週看到建議。您感覺您的研究被忽視了。您會如何繼續？",
+      "illustration_id": "ILL_A004",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Request a private meeting with your supervisor to understand their concerns, present additional supporting data, and collaboratively refine your recommendations.",
+          "text_zh_hk": "請求與主管私下會面以了解他們的擔憂，提供額外的支持數據，並協作完善您的建議。",
+          "next_scenario_id": "SCENARIO_A005",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Bypass your supervisor and present your findings directly to senior management to ensure they're heard.",
+          "text_zh_hk": "繞過您的主管，直接向高級管理層展示您的發現，以確保他們聽到。",
+          "next_scenario_id": "SCENARIO_A005",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Modify your recommendations to align with what your supervisor wants, even if you believe they're less effective.",
+          "text_zh_hk": "修改您的建議以符合主管的要求，即使您認為它們效果較差。",
+          "next_scenario_id": "SCENARIO_A005",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Document your concerns in writing, submit your original recommendations with a note about the disagreement, and continue working on alternative solutions.",
+          "text_zh_hk": "以書面形式記錄您的擔憂，提交您的原始建議並附上關於分歧的說明，並繼續研究替代解決方案。",
+          "next_scenario_id": "SCENARIO_A005",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "integrity_and_honesty", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_A005",
+      "category": "A",
+      "title": "Event Coordination Last-Minute Crisis",
+      "title_zh_hk": "活動協調最後一刻危機",
+      "description": "You're coordinating a large-scale JPC/Pat Heung event scheduled for tomorrow. At 5 PM today, the venue manager calls to say the venue is double-booked and unavailable. Your supervisor is in a meeting and unreachable. The event has 200+ registered participants. What is your immediate response?",
+      "description_zh_hk": "您正在協調一個定於明天舉行的大規模JPC/八鄉活動。今天下午5點，場地經理來電說場地被重複預訂且無法使用。您的主管正在開會且無法聯繫。活動有200多名已註冊參與者。您的即時回應是什麼？",
+      "illustration_id": "ILL_A005",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately contact alternative venues, prepare a backup plan with logistics, and inform key stakeholders while documenting all communication for your supervisor.",
+          "text_zh_hk": "立即聯繫備選場地，準備帶有後勤安排的備用計劃，並通知主要利益相關者，同時記錄所有通訊以供主管查看。",
+          "next_scenario_id": "SCENARIO_A006",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Wait for your supervisor to finish their meeting before taking any action, as they need to approve venue changes.",
+          "text_zh_hk": "在採取任何行動之前等待主管完成會議，因為他們需要批准場地變更。",
+          "next_scenario_id": "SCENARIO_A006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 0,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Cancel the event and inform participants via email, as finding a new venue on such short notice seems impossible.",
+          "text_zh_hk": "取消活動並通過電子郵件通知參與者，因為在如此短的時間內找到新場地似乎不可能。",
+          "next_scenario_id": "SCENARIO_A006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Contact the other party who booked the venue and try to negotiate sharing the space or rescheduling their event.",
+          "text_zh_hk": "聯繫預訂場地的另一方，嘗試協商共享空間或重新安排他們的活動。",
+          "next_scenario_id": "SCENARIO_A006",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_A006",
+      "category": "A",
+      "title": "Social Media Content Approval Delay",
+      "title_zh_hk": "社交媒體內容審批延遲",
+      "description": "For a project, you've prepared social media content that needs approval before posting. Your supervisor was supposed to review it yesterday but hasn't responded. The content is time-sensitive for an upcoming event. You've sent two reminders. The posting deadline is in 3 hours. What do you do?",
+      "description_zh_hk": "對於一個項目，您已準備好需要在發布前獲得批准的社交媒體內容。您的主管應該在昨天審查，但尚未回應。內容對即將舉行的活動具有時效性。您已發送了兩次提醒。發布截止時間還有3小時。您會怎麼做？",
+      "illustration_id": "ILL_A006",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Contact your supervisor via phone or in person to get immediate approval, explaining the time sensitivity and potential impact of delay.",
+          "text_zh_hk": "通過電話或親自聯繫您的主管以獲得即時批准，解釋時間敏感性和延遲的潛在影響。",
+          "next_scenario_id": "SCENARIO_A007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Post the content without approval, as you've followed the process and the deadline is critical.",
+          "text_zh_hk": "在未獲批准的情況下發布內容，因為您已遵循流程且截止日期很關鍵。",
+          "next_scenario_id": "SCENARIO_A007",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Wait until the deadline passes, then post with a note that approval was pending but the deadline required action.",
+          "text_zh_hk": "等到截止日期過去，然後發布並附註說明批准待定但截止日期要求採取行動。",
+          "next_scenario_id": "SCENARIO_A007",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Skip posting this content and prepare alternative content that doesn't require approval, even if it's less effective.",
+          "text_zh_hk": "跳過發布此內容，準備不需要批准的替代內容，即使效果較差。",
+          "next_scenario_id": "SCENARIO_A007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 3
+          }
+        }
+      ],
+      "competency_tags": ["discipline", "effective_communication", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_A007",
+      "category": "A",
+      "title": "Research Data Integrity Question",
+      "title_zh_hk": "研究數據完整性問題",
+      "description": "While analyzing data for the PMP Internship System review , you discover that some survey responses appear inconsistent or possibly fabricated. Your team member who collected this data insists it's valid. The data significantly impacts your cost-effectiveness conclusions. The final report is due in 2 days. How do you handle this?",
+      "description_zh_hk": "在分析PMP實習系統審查的數據時，您發現一些調查回應似乎不一致或可能是偽造的。收集此數據的團隊成員堅持認為它是有效的。該數據顯著影響您的成本效益結論。最終報告將在2天內到期。您會如何處理？",
+      "illustration_id": "ILL_A007",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Conduct additional verification checks on the questionable data, document your concerns with evidence, and discuss with your supervisor before finalizing conclusions.",
+          "text_zh_hk": "對有問題的數據進行額外的驗證檢查，用證據記錄您的擔憂，並在得出結論之前與主管討論。",
+          "next_scenario_id": "SCENARIO_A008",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 2,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Use the data as provided but add a disclaimer in your report noting potential data quality issues.",
+          "text_zh_hk": "按提供的數據使用，但在報告中添加免責聲明，註明潛在的數據質量問題。",
+          "next_scenario_id": "SCENARIO_A008",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Exclude the questionable data from your analysis without telling your team member, to ensure report accuracy.",
+          "text_zh_hk": "在不告知團隊成員的情況下從分析中排除有問題的數據，以確保報告準確性。",
+          "next_scenario_id": "SCENARIO_A008",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Accept your team member's assurance and proceed with the analysis, as questioning their work might create conflict.",
+          "text_zh_hk": "接受您團隊成員的保證並繼續分析，因為質疑他們的工作可能會造成衝突。",
+          "next_scenario_id": "SCENARIO_A008",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_A008",
+      "category": "A",
+      "title": "Cross-Cultural Communication Challenge",
+      "title_zh_hk": "跨文化溝通挑戰",
+      "description": "Working on project about mainland student engagement, you're conducting interviews with Hong Kong students studying in Mainland universities. During an interview, a student makes comments that seem culturally insensitive about Mainland practices. Your team member wants to exclude this interview from the report. How do you respond?",
+      "description_zh_hk": "在進行關於內地學生參與的項目時，您正在採訪在內地大學學習的香港學生。在採訪中，一名學生對內地做法發表了似乎具有文化不敏感性的評論。您的團隊成員希望將此採訪排除在報告之外。您會如何回應？",
+      "illustration_id": "ILL_A008",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Include the interview but present the student's views objectively, analyze the underlying concerns, and provide balanced recommendations that address cultural barriers.",
+          "text_zh_hk": "包含採訪但客觀呈現學生的觀點，分析潛在的擔憂，並提供平衡的建議以解決文化障礙。",
+          "next_scenario_id": "SCENARIO_A009",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Exclude the interview to avoid potential controversy and focus on more positive responses.",
+          "text_zh_hk": "排除採訪以避免潛在爭議，並專注於更積極的回應。",
+          "next_scenario_id": "SCENARIO_A009",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Edit the interview transcript to remove sensitive comments while keeping the rest of the content.",
+          "text_zh_hk": "編輯採訪記錄以刪除敏感評論，同時保留其餘內容。",
+          "next_scenario_id": "SCENARIO_A009",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Discuss with your supervisor how to handle sensitive cultural content in research, seeking guidance on best practices.",
+          "text_zh_hk": "與主管討論如何在研究中處理敏感的文化內容，尋求最佳實踐指導。",
+          "next_scenario_id": "SCENARIO_A009",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "effective_communication", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_A009",
+      "category": "A",
+      "title": "Late Arrival to Critical Meeting",
+      "title_zh_hk": "遲到關鍵會議",
+      "description": "You have a crucial project presentation for a project about recruitment optimization scheduled for 9:00 AM. Due to a transportation delay, you arrive at 9:15 AM. The presentation has already started, and your supervisor is presenting your slides. Your team members look stressed. You enter the room mid-presentation. What do you do?",
+      "description_zh_hk": "您有一個定於上午9:00舉行的關鍵項目演示。由於交通延誤，您在上午9:15到達。演示已經開始，您的主管正在展示您的幻燈片。您的團隊成員看起來很緊張。您在演示中途進入房間。您會怎麼做？",
+      "illustration_id": "ILL_A009",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Quietly take your seat, apologize briefly after the presentation, provide a written explanation to your supervisor, and ensure you're never late again by arriving 30 minutes early for future meetings.",
+          "text_zh_hk": "安靜地就座，在演示後簡短道歉，向主管提供書面解釋，並確保未來會議提前30分鐘到達，絕不再遲到。",
+          "next_scenario_id": "SCENARIO_A010",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Interrupt the presentation to explain the delay and take over presenting your section immediately.",
+          "text_zh_hk": "打斷演示以解釋延誤，並立即接管演示您的部分。",
+          "next_scenario_id": "SCENARIO_A010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Wait outside until the presentation ends, then join the Q&A session and explain your absence.",
+          "text_zh_hk": "在外面等到演示結束，然後加入問答環節並解釋您的缺席。",
+          "next_scenario_id": "SCENARIO_A010",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Send a text message to your team member explaining the delay and ask them to cover for you, then arrive when convenient.",
+          "text_zh_hk": "向您的團隊成員發送短信解釋延誤並請他們為您代班，然後在方便時到達。",
+          "next_scenario_id": "SCENARIO_A010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["discipline", "integrity_and_honesty", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_A010",
+      "category": "A",
+      "title": "Conflicting Requests from Neighbouring Team",
+      "title_zh_hk": "與鄰近團隊的衝突請求",
+      "description": "You're working on projects for your own team. Late in the afternoon, a neighbouring team in the same office approaches you, urgently asking for your help to finish an outreach presentation that is also due today. Your own supervisor still expects you to complete analysis and event materials on time. All tasks have tight deadlines and the neighbouring team says they have no one else available. What is your approach?",
+      "description_zh_hk": "您正在為自己所屬的團隊處理項目。當天下午稍晚，隔壁辦公室的一個鄰近團隊緊急找您幫忙，希望您協助完成一份同樣在今天截止的外展簡報。您的主管仍然期望您按時完成分析及活動材料。所有任務的截止時間都很緊迫，而鄰近團隊表示他們沒有其他人可以幫忙。您會採取什麼方法？",
+      "illustration_id": "ILL_A010",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Communicate with both supervisors immediately, explain the conflict, propose a realistic timeline for both tasks, and negotiate adjusted deadlines if necessary.",
+          "text_zh_hk": "立即與兩位主管溝通，解釋衝突，為兩項任務提出現實的時間表，並在必要時協商調整截止日期。",
+          "next_scenario_id": "SCENARIO_B001",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Work on both tasks simultaneously, doing partial work on each to meet both deadlines, even if quality suffers.",
+          "text_zh_hk": "同時處理兩項任務，對每項任務進行部分工作以滿足兩個截止日期，即使質量受影響。",
+          "next_scenario_id": "SCENARIO_B001",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Prioritize the task from the supervisor you report to more directly, and inform the other supervisor after completion.",
+          "text_zh_hk": "優先處理您更直接匯報的主管分配的任務，並在完成後告知另一位主管。",
+          "next_scenario_id": "SCENARIO_B001",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Complete both tasks by working through the night without informing either supervisor about the conflict.",
+          "text_zh_hk": "通過通宵工作完成兩項任務，而不告知任何一位主管衝突。",
+          "next_scenario_id": "SCENARIO_B001",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 2
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "integrity_and_honesty", "discipline", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_B001",
+      "category": "B",
+      "title": "Animal Watchers Programme Venue Issue",
+      "title_zh_hk": "動物觀察者計劃場地問題",
+      "description": "You're organizing an Animal Watchers Programme event in New Territories North. The scheduled venue at an Animal Care Center cancels 24 hours before the event due to an emergency. You have 50 registered participants, including students and teachers. Your supervisor is unavailable. What is your immediate action?",
+      "description_zh_hk": "您正在新界北組織一個動物觀察者計劃活動。預定的動物護理中心場地因緊急情況在活動前24小時取消。您有50名已註冊參與者，包括學生和教師。您的主管無法聯繫。您的即時行動是什麼？",
+      "illustration_id": "ILL_B001",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately contact alternative venues, notify all participants of the change with clear directions, coordinate with the Animal Care Center for a rescheduled visit, and document everything for your supervisor.",
+          "text_zh_hk": "立即聯繫備選場地，向所有參與者通知變更並提供明確指示，與動物護理中心協調重新安排的訪問，並為主管記錄一切。",
+          "next_scenario_id": "SCENARIO_B002",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Cancel the event and send a generic cancellation email to participants, as finding a replacement venue seems too difficult.",
+          "text_zh_hk": "取消活動並向參與者發送通用取消電子郵件，因為找到替代場地似乎太困難。",
+          "next_scenario_id": "SCENARIO_B002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Wait for your supervisor to return before making any decisions, even if it means delaying participant notification.",
+          "text_zh_hk": "在做出任何決定之前等待主管返回，即使這意味著延遲參與者通知。",
+          "next_scenario_id": "SCENARIO_B002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 0,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Proceed with the event at a different location you know about, without formal approval, to avoid disappointing participants.",
+          "text_zh_hk": "在您知道的另一個地點繼續進行活動，未經正式批准，以避免讓參與者失望。",
+          "next_scenario_id": "SCENARIO_B002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_B002",
+      "category": "B",
+      "title": "Anti-Crime Publicity Material Error",
+      "title_zh_hk": "反犯罪宣傳材料錯誤",
+      "description": "You've designed anti-crime publicity materials for a project. After printing 500 copies, you discover a factual error in the crime statistics. The materials are scheduled for distribution tomorrow. Reprinting would be costly and time-consuming. Your supervisor has already approved the original version. What do you do?",
+      "description_zh_hk": "您已為一個項目設計了反犯罪宣傳材料。在印刷500份後，您發現犯罪統計數據中存在事實錯誤。材料定於明天分發。重新印刷將是昂貴且耗時的。您的主管已經批准了原始版本。您會怎麼做？",
+      "illustration_id": "ILL_B002",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately inform your supervisor of the error, propose solutions (correction stickers or reprint), accept responsibility, and ensure accurate materials are distributed even if it causes delay.",
+          "text_zh_hk": "立即向主管報告錯誤，提出解決方案（更正貼紙或重新印刷），承擔責任，並確保分發準確的材料，即使這會造成延誤。",
+          "next_scenario_id": "SCENARIO_B003",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Distribute the materials as planned, as the error is minor and your supervisor already approved them.",
+          "text_zh_hk": "按計劃分發材料，因為錯誤很小且您的主管已經批准了。",
+          "next_scenario_id": "SCENARIO_B003",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Manually correct the error on all 500 copies yourself to avoid reporting the mistake.",
+          "text_zh_hk": "自己手動更正所有500份副本的錯誤，以避免報告錯誤。",
+          "next_scenario_id": "SCENARIO_B003",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Distribute only the corrected portion and keep the rest, hoping no one notices the inconsistency.",
+          "text_zh_hk": "僅分發更正的部分並保留其餘部分，希望沒有人注意到不一致。",
+          "next_scenario_id": "SCENARIO_B003",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_B003",
+      "category": "B",
+      "title": "University Student Engagement Event Conflict",
+      "title_zh_hk": "大學生參與活動衝突",
+      "description": "Working on project engaging university students, you've scheduled a crime prevention workshop. However, a major university exam period overlaps with your event date. Attendance is expected to be very low. Your supervisor insists on keeping the original date. How do you handle this?",
+      "description_zh_hk": "在進行項目吸引大學生時，您已安排了一個犯罪預防研討會。然而，大學主要考試期間與您的活動日期重疊。預計出席率會很低。您的主管堅持保持原定日期。您會如何處理？",
+      "illustration_id": "ILL_B003",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Present data on expected low attendance, propose alternative dates with better student availability, suggest virtual options, and work with your supervisor to find the best solution.",
+          "text_zh_hk": "提供預期低出席率的數據，提出學生可用性更好的替代日期，建議虛擬選項，並與主管合作找到最佳解決方案。",
+          "next_scenario_id": "SCENARIO_B004",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Proceed with the event as scheduled, accepting low attendance, and report it as successful regardless of numbers.",
+          "text_zh_hk": "按計劃進行活動，接受低出席率，無論人數多少都報告為成功。",
+          "next_scenario_id": "SCENARIO_B004",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Reschedule the event without informing your supervisor, as you believe it's the right decision.",
+          "text_zh_hk": "在未告知主管的情況下重新安排活動，因為您認為這是正確的決定。",
+          "next_scenario_id": "SCENARIO_B004",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Cancel the event and inform participants, explaining that exam conflicts make it unfeasible.",
+          "text_zh_hk": "取消活動並通知參與者，解釋考試衝突使其不可行。",
+          "next_scenario_id": "SCENARIO_B004",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "problem_solving_under_stress", "integrity_and_honesty"]
+    },
+    {
+      "scenario_id": "SCENARIO_B004",
+      "category": "B",
+      "title": "Hiking Safety Project Equipment Failure",
+      "title_zh_hk": "遠足安全項目設備故障",
+      "description": "For a project about hiking safety promotion, you're filming a safety video at a hiking trail. Your camera equipment malfunctions halfway through the shoot. You've already invested 4 hours, and the location is remote. Your team member suggests using phone cameras, but quality will be lower. The video deadline is in 2 days. What is your decision?",
+      "description_zh_hk": "對於一個遠足安全推廣項目，您正在遠足徑拍攝安全視頻。您的攝像設備在拍攝中途發生故障。您已經投入了4小時，而且地點偏遠。您的團隊成員建議使用手機攝像頭，但質量會較低。視頻截止日期還有2天。您的決定是什麼？",
+      "illustration_id": "ILL_B004",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately contact equipment suppliers for replacement, explore borrowing options, assess phone camera quality for backup, and communicate timeline adjustments to your supervisor if needed.",
+          "text_zh_hk": "立即聯繫設備供應商進行更換，探索借用選項，評估手機攝像頭質量作為備用，並在必要時向主管傳達時間表調整。",
+          "next_scenario_id": "SCENARIO_B005",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Use phone cameras to complete the shoot immediately, accepting lower quality to meet the deadline.",
+          "text_zh_hk": "使用手機攝像頭立即完成拍攝，接受較低質量以滿足截止日期。",
+          "next_scenario_id": "SCENARIO_B005",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Cancel the shoot, return to base, and request an extension due to equipment failure.",
+          "text_zh_hk": "取消拍攝，返回基地，並因設備故障請求延期。",
+          "next_scenario_id": "SCENARIO_B005",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Continue with damaged equipment, hoping it works well enough, without reporting the issue.",
+          "text_zh_hk": "繼續使用損壞的設備，希望它能正常工作，而不報告問題。",
+          "next_scenario_id": "SCENARIO_B005",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_B005",
+      "category": "B",
+      "title": "Counter-Terrorism Exercise Coordination",
+      "title_zh_hk": "反恐演習協調",
+      "description": "You're organizing a counter-terrorism exercise at Queen Elizabeth Hospital. Two days before the event, a key external agency participant withdraws, saying they have a scheduling conflict. This participant plays a critical role in the exercise scenario. Your supervisor is unavailable. What is your response?",
+      "description_zh_hk": "您正在伊利沙伯醫院組織反恐演習。活動前兩天，一個關鍵的外部機構參與者退出，說他們有時間表衝突。該參與者在演習場景中扮演關鍵角色。您的主管無法聯繫。您的回應是什麼？",
+      "illustration_id": "ILL_B005",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately contact alternative participants from your network, modify the exercise scenario to accommodate the change, inform all stakeholders, and document the adjustment for your supervisor.",
+          "text_zh_hk": "立即從您的網絡聯繫替代參與者，修改演習場景以適應變更，通知所有利益相關者，並為主管記錄調整。",
+          "next_scenario_id": "SCENARIO_B006",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Cancel the exercise and reschedule, as the missing participant is essential.",
+          "text_zh_hk": "取消演習並重新安排，因為缺失的參與者是必要的。",
+          "next_scenario_id": "SCENARIO_B006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Proceed with the exercise using an internal staff member to fill the role, without informing participants of the change.",
+          "text_zh_hk": "使用內部工作人員填補角色繼續進行演習，而不告知參與者變更。",
+          "next_scenario_id": "SCENARIO_B006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Wait for your supervisor to return before making any decisions about the exercise.",
+          "text_zh_hk": "在做出任何關於演習的決定之前等待主管返回。",
+          "next_scenario_id": "SCENARIO_B006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 0,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_B006",
+      "category": "B",
+      "title": "Social Media Posting Without Approval",
+      "title_zh_hk": "未經批准發布社交媒體",
+      "description": "For a project, you've created social media content promoting a crime prevention event. Your supervisor asked you to wait for approval before posting, but they haven't responded after 48 hours. The event is tomorrow, and posting today is crucial for attendance. Your colleague suggests posting without approval since it's urgent. What do you do?",
+      "description_zh_hk": "對於一個項目，您已創建了推廣犯罪預防活動的社交媒體內容。您的主管要求您在發布前等待批准，但他們在48小時後仍未回應。活動是明天，今天發布對出席率至關重要。您的同事建議在未獲批准的情況下發布，因為這很緊急。您會怎麼做？",
+      "illustration_id": "ILL_B006",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Make one final attempt to contact your supervisor via phone or in person, explain the urgency, and only post if you receive verbal approval. Document the approval process.",
+          "text_zh_hk": "通過電話或親自最後一次嘗試聯繫您的主管，解釋緊迫性，只有在獲得口頭批准後才發布。記錄批准過程。",
+          "next_scenario_id": "SCENARIO_B007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 3,
+            "discipline": 3
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Post the content immediately, as the deadline is critical and you've followed the process by requesting approval.",
+          "text_zh_hk": "立即發布內容，因為截止日期很關鍵，而且您已通過請求批准遵循了流程。",
+          "next_scenario_id": "SCENARIO_B007",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Wait until you receive approval, even if it means missing the optimal posting time and potentially lower attendance.",
+          "text_zh_hk": "等到您獲得批准，即使這意味著錯過最佳發布時間並可能導致較低的出席率。",
+          "next_scenario_id": "SCENARIO_B007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 3
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Post on your personal social media account and ask friends to share, to avoid violating the approval requirement.",
+          "text_zh_hk": "在您的個人社交媒體帳戶上發布並請朋友分享，以避免違反批准要求。",
+          "next_scenario_id": "SCENARIO_B007",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["discipline", "integrity_and_honesty", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_B007",
+      "category": "B",
+      "title": "Team Member Missing Deadline",
+      "title_zh_hk": "團隊成員錯過截止日期",
+      "description": "Working on a project, you and another intern are creating publicity materials. Your partner was supposed to complete the graphic design by Friday, but it's Monday and they haven't submitted it. They haven't responded to your messages. The materials are needed for a Tuesday event. What is your approach?",
+      "description_zh_hk": "在進行一個項目時，您和另一名實習生正在創建宣傳材料。您的搭檔應該在週五完成圖形設計，但現在是週一，他們還沒有提交。他們沒有回應您的消息。材料需要在週二的活動中使用。您會採取什麼方法？",
+      "illustration_id": "ILL_B007",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Make multiple contact attempts (phone, email, in-person), inform your supervisor of the situation, create a backup plan to complete the work yourself if needed, and document all communication attempts.",
+          "text_zh_hk": "進行多次聯繫嘗試（電話、電子郵件、親自），向主管報告情況，創建備用計劃以在必要時自己完成工作，並記錄所有溝通嘗試。",
+          "next_scenario_id": "SCENARIO_B008",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Complete the graphic design yourself immediately to meet the deadline, without informing your supervisor about the issue.",
+          "text_zh_hk": "立即自己完成圖形設計以滿足截止日期，而不告知主管問題。",
+          "next_scenario_id": "SCENARIO_B008",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Report your partner to the supervisor and request that they be removed from the project, as they're unreliable.",
+          "text_zh_hk": "向主管報告您的搭檔並要求將他們從項目中移除，因為他們不可靠。",
+          "next_scenario_id": "SCENARIO_B008",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Wait another day to see if your partner responds, and inform the supervisor only if they don't contact you by Tuesday morning.",
+          "text_zh_hk": "再等一天看看您的搭檔是否回應，只有在他們在週二早上之前沒有聯繫您時才告知主管。",
+          "next_scenario_id": "SCENARIO_B008",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "problem_solving_under_stress", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_B008",
+      "category": "B",
+      "title": "Publicity Material Copyright Concern",
+      "title_zh_hk": "宣傳材料版權問題",
+      "description": "While creating publicity materials for a project, you realize you've used an image from the internet without proper licensing. The materials are already printed and scheduled for distribution tomorrow. Your supervisor approved the design but didn't check image sources. What do you do?",
+      "description_zh_hk": "在為一個項目創建宣傳材料時，您意識到自己使用了來自互聯網的圖像而沒有適當的許可。材料已經印刷並定於明天分發。您的主管批准了設計但沒有檢查圖像來源。您會怎麼做？",
+      "illustration_id": "ILL_B008",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately inform your supervisor, research proper licensing options or find replacement images, and delay distribution if necessary to ensure legal compliance.",
+          "text_zh_hk": "立即告知主管，研究適當的許可選項或尋找替代圖像，並在必要時延遲分發以確保法律合規。",
+          "next_scenario_id": "SCENARIO_B009",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Distribute the materials as planned, as your supervisor already approved them and the copyright issue might not be discovered.",
+          "text_zh_hk": "按計劃分發材料，因為您的主管已經批准了，而且版權問題可能不會被發現。",
+          "next_scenario_id": "SCENARIO_B009",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Replace the image digitally in the remaining copies but don't mention the issue to avoid trouble.",
+          "text_zh_hk": "在剩餘副本中數字化替換圖像，但不提及問題以避免麻煩。",
+          "next_scenario_id": "SCENARIO_B009",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Check if the image is actually copyrighted and only report if it's a confirmed violation.",
+          "text_zh_hk": "檢查圖像是否實際受版權保護，只有在確認違規時才報告。",
+          "next_scenario_id": "SCENARIO_B009",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_B009",
+      "category": "B",
+      "title": "Event Attendance Reporting Accuracy",
+      "title_zh_hk": "活動出席報告準確性",
+      "description": "After organizing a crime prevention event, you're preparing the attendance report. Your supervisor asks you to inflate the attendance numbers slightly to make the event appear more successful, as actual attendance was lower than expected. The report will be used for future funding decisions. What do you do?",
+      "description_zh_hk": "在組織犯罪預防活動後，您正在準備出席報告。您的主管要求您略微誇大出席人數，以使活動看起來更成功，因為實際出席人數低於預期。該報告將用於未來的資金決策。您會怎麼做？",
+      "illustration_id": "ILL_B009",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Report the accurate attendance numbers, provide analysis on why attendance was lower than expected, and suggest improvements for future events.",
+          "text_zh_hk": "報告準確的出席人數，提供分析說明為什麼出席人數低於預期，並為未來的活動提出改進建議。",
+          "next_scenario_id": "SCENARIO_B010",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 3
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Follow your supervisor's instruction and inflate the numbers slightly, as they have more experience and know what's best.",
+          "text_zh_hk": "遵循主管的指示並略微誇大人數，因為他們更有經驗並知道什麼是最好的。",
+          "next_scenario_id": "SCENARIO_B010",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Report accurate numbers but add a note explaining that some participants may have been missed in the count.",
+          "text_zh_hk": "報告準確的數字，但添加註釋說明可能有一些參與者在計數中被遺漏。",
+          "next_scenario_id": "SCENARIO_B010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Report the numbers your supervisor suggested but keep your own accurate records separately.",
+          "text_zh_hk": "報告主管建議的數字，但單獨保留您自己的準確記錄。",
+          "next_scenario_id": "SCENARIO_B010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "discipline", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_B010",
+      "category": "B",
+      "title": "Video Production Deadline Under Weather Conditions",
+      "title_zh_hk": "惡劣天氣下的視頻製作截止日期",
+      "description": "You're filming a hiking safety video and have scheduled an outdoor shoot. However, severe weather warnings are issued for the scheduled date. Rescheduling would push the deadline back by a week, but your supervisor expects the video completed on time. The weather might clear up, but it's risky. What is your decision?",
+      "description_zh_hk": "您正在拍攝遠足安全視頻，並已安排戶外拍攝。然而，預定日期發布了惡劣天氣警告。重新安排會將截止日期推遲一週，但您的主管期望視頻按時完成。天氣可能會好轉，但這是有風險的。您的決定是什麼？",
+      "illustration_id": "ILL_B010",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Communicate the weather risk to your supervisor immediately, propose alternative indoor locations or rescheduling options, and make a safety-first decision based on weather updates.",
+          "text_zh_hk": "立即向主管傳達天氣風險，提出替代室內地點或重新安排選項，並根據天氣更新做出安全第一的決定。",
+          "next_scenario_id": "SCENARIO_C001",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Proceed with the outdoor shoot as scheduled, hoping the weather improves, to meet the deadline.",
+          "text_zh_hk": "按計劃進行戶外拍攝，希望天氣好轉，以滿足截止日期。",
+          "next_scenario_id": "SCENARIO_C001",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Cancel the shoot and request an extension, explaining that safety concerns prevent outdoor filming.",
+          "text_zh_hk": "取消拍攝並請求延期，解釋安全問題阻止了戶外拍攝。",
+          "next_scenario_id": "SCENARIO_C001",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Wait until the morning of the shoot to decide, and proceed if weather seems acceptable.",
+          "text_zh_hk": "等到拍攝當天早上再決定，如果天氣看起來可以接受就進行。",
+          "next_scenario_id": "SCENARIO_C001",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_C001",
+      "category": "C",
+      "title": "Recruitment Video Production Ethics",
+      "title_zh_hk": "招聘視頻製作倫理",
+      "description": "Working on project C1 (police recruitment promotional materials), you're editing a video that includes testimonials from current officers. One officer mentions something that could be misleading about the work environment. Your supervisor hasn't reviewed this section yet. The video deadline is in 2 days. What do you do?",
+      "description_zh_hk": "在進行項目C1（警察招聘宣傳材料）時，您正在編輯一個包含現任警官證詞的視頻。一名警官提到了一些可能對工作環境產生誤導的內容。您的主管尚未審查此部分。視頻截止日期還有2天。您會怎麼做？",
+      "illustration_id": "ILL_C001",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Flag the potentially misleading content, discuss it with the officer to clarify, and present both the original and edited versions to your supervisor for review before finalizing.",
+          "text_zh_hk": "標記可能誤導的內容，與警官討論以澄清，並在最終確定之前向主管提交原始版本和編輯版本以供審查。",
+          "next_scenario_id": "SCENARIO_C002",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Edit out the misleading part without mentioning it, to ensure the video meets the deadline and presents a positive image.",
+          "text_zh_hk": "在不提及的情況下編輯掉誤導部分，以確保視頻滿足截止日期並呈現積極形象。",
+          "next_scenario_id": "SCENARIO_C002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Include the content as is, since the officer said it and it's their authentic experience.",
+          "text_zh_hk": "按原樣包含內容，因為這是警官說的，是他們的真實經歷。",
+          "next_scenario_id": "SCENARIO_C002",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Wait for your supervisor to review it and make the decision, even if it delays the deadline.",
+          "text_zh_hk": "等待主管審查並做出決定，即使這會延遲截止日期。",
+          "next_scenario_id": "SCENARIO_C002",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "effective_communication", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_C002",
+      "category": "C",
+      "title": "Discipline Video Production Deadline Pressure",
+      "title_zh_hk": "紀律視頻製作截止日期壓力",
+      "description": "For project C2 (discipline-related video production), you're working on an animation that needs to be completed by Friday. On Wednesday, you realize the animation software has a bug that's causing rendering errors. Your technical support contact is unavailable. The deadline cannot be extended. How do you handle this?",
+      "description_zh_hk": "對於項目C2（紀律相關視頻製作），您正在製作一個需要在週五完成的動畫。週三，您意識到動畫軟件有一個導致渲染錯誤的錯誤。您的技術支持聯繫人無法聯繫。截止日期無法延長。您會如何處理？",
+      "illustration_id": "ILL_C002",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Research alternative solutions immediately, try different rendering settings or software versions, document the issue thoroughly, and communicate progress updates to your supervisor with a backup plan.",
+          "text_zh_hk": "立即研究替代解決方案，嘗試不同的渲染設置或軟件版本，徹底記錄問題，並向主管傳達進度更新和備用計劃。",
+          "next_scenario_id": "SCENARIO_C003",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simpler animation style that works with the current software, even if it's less impressive, to meet the deadline.",
+          "text_zh_hk": "使用與當前軟件兼容的更簡單的動畫風格，即使效果較差，也要滿足截止日期。",
+          "next_scenario_id": "SCENARIO_C003",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Submit the partially rendered animation with a note explaining the technical issue, hoping it's acceptable.",
+          "text_zh_hk": "提交部分渲染的動畫並附上說明技術問題的註釋，希望它是可以接受的。",
+          "next_scenario_id": "SCENARIO_C003",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Wait for technical support to become available, as the issue is beyond your expertise.",
+          "text_zh_hk": "等待技術支持可用，因為問題超出了您的專業知識。",
+          "next_scenario_id": "SCENARIO_C003",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_C003",
+      "category": "C",
+      "title": "IT System Development Data Loss",
+      "title_zh_hk": "IT系統開發數據丟失",
+      "description": "Working on project C3 (PQD IT systems enhancement), you're developing an IVR system. You accidentally delete a critical code file that you've been working on for 3 days. Your backup system shows the file was last backed up 5 days ago, so you'll lose recent work. The project deadline is approaching. What is your response?",
+      "description_zh_hk": "在進行項目C3（PQD IT系統增強）時，您正在開發IVR系統。您意外刪除了一個您已經工作了3天的關鍵代碼文件。您的備份系統顯示該文件最後一次備份是在5天前，因此您將丟失最近的工作。項目截止日期臨近。您的回應是什麼？",
+      "illustration_id": "ILL_C003",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately attempt file recovery using available tools, inform your supervisor of the situation, work to recreate the lost code efficiently, and implement a better backup strategy going forward.",
+          "text_zh_hk": "立即使用可用工具嘗試文件恢復，向主管報告情況，高效地重新創建丟失的代碼，並實施更好的備份策略。",
+          "next_scenario_id": "SCENARIO_C004",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Try to recover the file yourself without telling anyone, to avoid appearing incompetent.",
+          "text_zh_hk": "自己嘗試恢復文件而不告訴任何人，以避免顯得無能。",
+          "next_scenario_id": "SCENARIO_C004",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Use the 5-day-old backup and work extra hours to recreate what was lost, without informing your supervisor.",
+          "text_zh_hk": "使用5天前的備份並加班工作以重新創建丟失的內容，而不告知主管。",
+          "next_scenario_id": "SCENARIO_C004",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Report the loss immediately and request an extension, explaining that the work needs to be redone.",
+          "text_zh_hk": "立即報告損失並請求延期，解釋工作需要重做。",
+          "next_scenario_id": "SCENARIO_C004",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 2,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_C004",
+      "category": "C",
+      "title": "Equipment Inventory System Data Entry Error",
+      "title_zh_hk": "設備庫存系統數據輸入錯誤",
+      "description": "Working on project C4 (PMLC equipment inventory optimization), you're entering data for over 1,000 equipment items. You discover that you've been entering serial numbers incorrectly for the past 2 days, affecting about 200 items. Correcting this will require significant time and delay the project. What do you do?",
+      "description_zh_hk": "在進行項目C4（PMLC設備庫存優化）時，您正在輸入1,000多件設備的數據。您發現過去2天您一直在錯誤地輸入序列號，影響了大約200件物品。更正這將需要大量時間並延遲項目。您會怎麼做？",
+      "illustration_id": "ILL_C004",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately inform your supervisor of the error, propose a systematic correction plan, work extra hours to fix the mistakes, and implement a verification process to prevent future errors.",
+          "text_zh_hk": "立即向主管報告錯誤，提出系統的更正計劃，加班工作以修正錯誤，並實施驗證過程以防止未來的錯誤。",
+          "next_scenario_id": "SCENARIO_C005",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Continue with the incorrect data for now and correct it later when you have more time, without reporting the issue.",
+          "text_zh_hk": "暫時繼續使用不正確的數據，稍後有更多時間時再更正，而不報告問題。",
+          "next_scenario_id": "SCENARIO_C005",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 0
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Correct only the most critical items and leave the rest, hoping they won't be noticed.",
+          "text_zh_hk": "只更正最關鍵的物品，其餘的保留，希望它們不會被注意到。",
+          "next_scenario_id": "SCENARIO_C005",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Report the error but suggest continuing with the current data and correcting it in a future update.",
+          "text_zh_hk": "報告錯誤但建議繼續使用當前數據，並在未來的更新中更正。",
+          "next_scenario_id": "SCENARIO_C005",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 2,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_C005",
+      "category": "C",
+      "title": "AI Model Fine-Tuning Ethical Concern",
+      "title_zh_hk": "AI模型微調倫理問題",
+      "description": "Working on project C5 (Smart Police Post), you're fine-tuning a Large Language Model. During testing, you notice the model sometimes generates responses that could be considered biased or inappropriate. Your supervisor wants the system launched quickly. What is your approach?",
+      "description_zh_hk": "在進行項目C5（智能警察崗位）時，您正在微調大型語言模型。在測試期間，您注意到模型有時會生成可能被認為有偏見或不適當的回應。您的主管希望系統快速啟動。您會採取什麼方法？",
+      "illustration_id": "ILL_C005",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Document the bias issues with specific examples, propose additional training data and bias mitigation strategies, and recommend delaying launch until these issues are addressed.",
+          "text_zh_hk": "用具體示例記錄偏見問題，提出額外的訓練數據和偏見緩解策略，並建議推遲啟動直到解決這些問題。",
+          "next_scenario_id": "SCENARIO_C006",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Launch the system as planned, as the issues are minor and can be fixed in future updates.",
+          "text_zh_hk": "按計劃啟動系統，因為問題很小，可以在未來的更新中修復。",
+          "next_scenario_id": "SCENARIO_C006",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Fix the most obvious bias issues quickly and launch, addressing others later.",
+          "text_zh_hk": "快速修復最明顯的偏見問題並啟動，稍後處理其他問題。",
+          "next_scenario_id": "SCENARIO_C006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Mention the concerns casually to your supervisor but proceed with launch if they don't object.",
+          "text_zh_hk": "隨意向主管提及擔憂，但如果他們不反對就繼續啟動。",
+          "next_scenario_id": "SCENARIO_C006",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_C006",
+      "category": "C",
+      "title": "Database Optimization Performance Issue",
+      "title_zh_hk": "數據庫優化性能問題",
+      "description": "Working on project C6 (RCIU3 automation programs), you're optimizing a database that's running slowly. Your changes improve performance but cause some existing queries to fail. The system is used daily by multiple departments. You have 2 days to fix this. How do you proceed?",
+      "description_zh_hk": "在進行項目C6（RCIU3自動化程序）時，您正在優化運行緩慢的數據庫。您的更改提高了性能，但導致一些現有查詢失敗。該系統每天被多個部門使用。您有2天時間修復此問題。您會如何進行？",
+      "illustration_id": "ILL_C006",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately roll back the changes, identify which queries are affected, fix them systematically, test thoroughly, and communicate with affected departments about the temporary disruption.",
+          "text_zh_hk": "立即回滾更改，識別哪些查詢受到影響，系統地修復它們，徹底測試，並與受影響的部門溝通臨時中斷。",
+          "next_scenario_id": "SCENARIO_C007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Continue with the optimization and fix queries as issues are reported by users.",
+          "text_zh_hk": "繼續優化，並在用戶報告問題時修復查詢。",
+          "next_scenario_id": "SCENARIO_C007",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Revert to the original database structure to avoid any problems, even though performance will remain slow.",
+          "text_zh_hk": "恢復到原始數據庫結構以避免任何問題，即使性能仍然緩慢。",
+          "next_scenario_id": "SCENARIO_C007",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Keep the optimization and document which queries need to be updated, leaving it for the next developer.",
+          "text_zh_hk": "保留優化並記錄哪些查詢需要更新，留給下一個開發人員。",
+          "next_scenario_id": "SCENARIO_C007",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 0
+          }
+        }
+      ],
+      "competency_tags": ["problem_solving_under_stress", "effective_communication", "discipline"]
+    },
+    {
+      "scenario_id": "SCENARIO_C007",
+      "category": "C",
+      "title": "District Project Hardware Assessment Conflict",
+      "title_zh_hk": "地區項目硬件評估衝突",
+      "description": "Working on project C7 (District IC/SR/IM project), you're evaluating hardware and software. You discover that some equipment is outdated and needs replacement, but your supervisor's budget plan doesn't include these upgrades. The assessment report is due soon. How do you handle this?",
+      "description_zh_hk": "在進行項目C7（地區IC/SR/IM項目）時，您正在評估硬件和軟件。您發現一些設備已經過時並需要更換，但您的主管預算計劃不包括這些升級。評估報告即將到期。您會如何處理？",
+      "illustration_id": "ILL_C007",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Present a comprehensive assessment including current state, risks of outdated equipment, cost-benefit analysis of upgrades, and propose phased implementation options within budget constraints.",
+          "text_zh_hk": "提供全面的評估，包括當前狀態、過時設備的風險、升級的成本效益分析，並在預算限制內提出分階段實施選項。",
+          "next_scenario_id": "SCENARIO_C008",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Modify your assessment to align with the existing budget, omitting the upgrade recommendations.",
+          "text_zh_hk": "修改您的評估以符合現有預算，省略升級建議。",
+          "next_scenario_id": "SCENARIO_C008",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Include the upgrade recommendations but note that they're outside the current budget.",
+          "text_zh_hk": "包括升級建議，但註明它們超出了當前預算。",
+          "next_scenario_id": "SCENARIO_C008",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Focus only on software evaluation and avoid mentioning hardware issues to stay within scope.",
+          "text_zh_hk": "只關注軟件評估，避免提及硬件問題以保持在範圍內。",
+          "next_scenario_id": "SCENARIO_C008",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "effective_communication", "problem_solving_under_stress"]
+    },
+    {
+      "scenario_id": "SCENARIO_C008",
+      "category": "C",
+      "title": "Mountain Search Software Testing Deadline",
+      "title_zh_hk": "山地搜索軟件測試截止日期",
+      "description": "Working on project C8 (Operation DROVEDC103), you're testing pixel-scanning software for mountain search and rescue. The software works but has accuracy issues in certain lighting conditions. Your supervisor expects a feasibility report by Friday, but you need more testing time. What do you do?",
+      "description_zh_hk": "在進行項目C8（行動DROVEDC103）時，您正在測試用於山地搜索和救援的像素掃描軟件。該軟件可以工作，但在某些光照條件下存在準確性問題。您的主管期望在週五之前看到可行性報告，但您需要更多測試時間。您會怎麼做？",
+      "illustration_id": "ILL_C008",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Document current findings comprehensively, clearly identify limitations and conditions where accuracy is affected, propose additional testing scenarios, and request a reasonable extension with justification.",
+          "text_zh_hk": "全面記錄當前發現，清楚地識別限制和影響準確性的條件，提出額外的測試場景，並提出合理的延期請求並提供理由。",
+          "next_scenario_id": "SCENARIO_C009",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Submit a positive report focusing on successful tests, downplaying the accuracy issues as minor.",
+          "text_zh_hk": "提交一份積極的報告，重點關注成功的測試，淡化準確性問題為次要問題。",
+          "next_scenario_id": "SCENARIO_C009",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Submit the report on time but note that further testing is recommended, without emphasizing the issues.",
+          "text_zh_hk": "按時提交報告，但註明建議進一步測試，不強調問題。",
+          "next_scenario_id": "SCENARIO_C009",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 1,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Request an extension without providing detailed justification, hoping it will be granted.",
+          "text_zh_hk": "請求延期而不提供詳細理由，希望會被批准。",
+          "next_scenario_id": "SCENARIO_C009",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication"]
+    },
+    {
+      "scenario_id": "SCENARIO_C009",
+      "category": "C",
+      "title": "Graphic Design Project Client Feedback Conflict",
+      "title_zh_hk": "圖形設計項目客戶反饋衝突",
+      "description": "Working on project C1 (recruitment promotional materials), you've created graphic designs that your supervisor approved. However, a senior officer reviewing the materials requests changes that you believe will make the designs less effective. The materials are scheduled for printing next week. What is your approach?",
+      "description_zh_hk": "在進行項目C1（招聘宣傳材料）時，您創建了主管批准的圖形設計。然而，審查材料的高級警官要求更改，您認為這會使設計效果較差。材料定於下週印刷。您會採取什麼方法？",
+      "illustration_id": "ILL_C009",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Present your design rationale with evidence, discuss the senior officer's concerns respectfully, propose alternative solutions that address their concerns while maintaining design effectiveness, and seek collaborative resolution.",
+          "text_zh_hk": "提供您的設計理由和證據，尊重地討論高級警官的擔憂，提出解決他們擔憂同時保持設計有效性的替代解決方案，並尋求協作解決。",
+          "next_scenario_id": "SCENARIO_C010",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Make the requested changes immediately without discussion, as the senior officer has more authority.",
+          "text_zh_hk": "立即進行請求的更改而不討論，因為高級警官有更多權威。",
+          "next_scenario_id": "SCENARIO_C010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Implement the changes but keep your original version, hoping to use it in the future.",
+          "text_zh_hk": "實施更改但保留您的原始版本，希望將來使用它。",
+          "next_scenario_id": "SCENARIO_C010",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Ask your supervisor to mediate the disagreement between you and the senior officer.",
+          "text_zh_hk": "請您的主管調解您與高級警官之間的分歧。",
+          "next_scenario_id": "SCENARIO_C010",
+          "scores": {
+            "integrity_and_honesty": 2,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 2,
+            "discipline": 2
+          }
+        }
+      ],
+      "competency_tags": ["effective_communication", "problem_solving_under_stress", "integrity_and_honesty"]
+    },
+    {
+      "scenario_id": "SCENARIO_C010",
+      "category": "C",
+      "title": "Last-Minute Data Privacy Concern Before Go-Live",
+      "title_zh_hk": "上線前最後一刻的數據私隱疑慮",
+      "description": "One day before go-live for project C3 (PQD IT systems), you are doing a final review of test data and user access. You realise that one of the testing datasets accidentally contains a small amount of real personal data that should have been anonymised. The system has already been announced to stakeholders and there is strong pressure to go live on time. Your supervisor is in back-to-back meetings and not immediately reachable. What do you do?",
+      "description_zh_hk": "在項目C3（PQD IT系統）正式上線的前一天，您正在做最後的測試數據及用戶權限檢查。您發現其中一組測試數據意外包含少量真實個人資料，本來應該先作匿名化處理。系統上線時間已經對各持份者公布，壓力很大要求準時上線，而您的主管正連續開會，一時未能聯絡。您會怎樣處理？",
+      "illustration_id": "ILL_C010",
+      "options": [
+        {
+          "option_id": "A",
+          "text": "Immediately stop any further use of the dataset, document exactly where real data appears, inform your supervisor and relevant data protection contact as soon as possible, and propose a short delay to properly anonymise or remove the data before go-live.",
+          "text_zh_hk": "立即停止繼續使用相關數據集，詳細記錄真實資料出現的位置，第一時間通知主管及相關的資料保障負責人，並建議在上線前作短暫延後，以正確匿名化或移除該些數據。",
+          "next_scenario_id": "END",
+          "scores": {
+            "integrity_and_honesty": 3,
+            "problem_solving_under_stress": 3,
+            "effective_communication": 3,
+            "discipline": 2
+          }
+        },
+        {
+          "option_id": "B",
+          "text": "Proceed with go-live as planned because the amount of real data is very small, make a note to fix it in the next system update, and do not escalate now to avoid delays.",
+          "text_zh_hk": "按原計劃準時上線，因為涉及的真實數據量很少，只在記錄中備註下次系統更新時修正，現階段不向上級匯報以避免延誤。",
+          "next_scenario_id": "END",
+          "scores": {
+            "integrity_and_honesty": 0,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "C",
+          "text": "Quietly replace the dataset with a quickly edited version yourself, without full verification or informing anyone, so that the launch time is not affected.",
+          "text_zh_hk": "自己在短時間內悄悄修改該數據集並替換，沒有作全面驗證亦不通知任何人，希望不影響上線時間。",
+          "next_scenario_id": "END",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 2,
+            "effective_communication": 0,
+            "discipline": 1
+          }
+        },
+        {
+          "option_id": "D",
+          "text": "Send a brief email to your supervisor mentioning there might be a minor data issue, but continue with go-live preparations as normal unless you receive explicit instructions to stop.",
+          "text_zh_hk": "只向主管發送一封簡短電郵提到可能有輕微數據問題，但如未收到明確指示暫停，便繼續按原計劃準備上線。",
+          "next_scenario_id": "END",
+          "scores": {
+            "integrity_and_honesty": 1,
+            "problem_solving_under_stress": 1,
+            "effective_communication": 1,
+            "discipline": 1
+          }
+        }
+      ],
+      "competency_tags": ["integrity_and_honesty", "problem_solving_under_stress", "effective_communication", "discipline"]
+    }
+  ],
+  "scoring_config": {
+    "max_score_per_competency": 90,
+    "max_total_score": 360,
+    "rating_thresholds": {
+      "highly_recommended": {
+        "min_total": 270,
+        "min_per_competency": 68
+      },
+      "recommended": {
+        "min_total": 180,
+        "min_per_competency": 45
+      },
+      "borderline": {
+        "min_total": 120,
+        "min_per_competency": 30
+      },
+      "not_recommended": {
+        "max_total": 119
+      }
+    }
+  }
+}

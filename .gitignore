@@ -1,0 +1,66 @@
+# Dependencies
+node_modules/
+*/node_modules/
+
+# Environment variables
+.env
+.env.local
+.env.production
+.env.development
+backend/.env
+frontend/.env
+frontend/.env.local
+
+# Build outputs
+dist/
+build/
+*.log
+*.log.*
+
+# Database files (SQLite - if any)
+*.db
+*.db-shm
+*.db-wal
+backend/database/*.db
+backend/database/*.db-shm
+backend/database/*.db-wal
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Windows batch files (temporary scripts)
+*.bat
+
+# Test and debug files
+test-*.js
+debug-*.js
+*-test.js
+*-debug.js
+
+# PM2
+.pm2/
+ecosystem.config.js
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Misc
+*.pid
+*.seed
+*.pid.lock
