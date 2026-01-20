@@ -1,6 +1,11 @@
 import axios from 'axios';
 
-const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:3001/api';
+// 在开发环境使用本地后端，在生产环境（如 Railway）使用相对路径 /api
+const API_BASE_URL =
+  import.meta.env.VITE_API_URL ||
+  (import.meta.env.MODE === 'development'
+    ? 'http://localhost:3001/api'
+    : '/api');
 
 const api = axios.create({
   baseURL: API_BASE_URL,
