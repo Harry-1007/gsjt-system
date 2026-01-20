@@ -1,5 +1,7 @@
 const express = require('express');
 const cors = require('cors');
+const path = require('path');
+const fs = require('fs');
 require('dotenv').config();
 
 // 添加错误处理来捕获启动错误
@@ -40,6 +42,15 @@ app.use(cors({
 }));
 app.use(express.json());
 
+// 静态文件服务 - 服务前端构建后的文件
+const frontendDistPath = path.join(__dirname, '../frontend/dist');
+if (fs.existsSync(frontendDistPath)) {
+  app.use(express.static(frontendDistPath));
+  console.log('✅ 静态文件服务已启用:', frontendDistPath);
+} else {
+  console.log('⚠️  前端构建文件不存在，仅提供 API 服务');
+}
+
 // 请求日志中间件
 app.use((req, res, next) => {
   console.log(`${new Date().toISOString()} - ${req.method} ${req.path}`);
@@ -65,10 +76,22 @@ app.use((err, req, res, next) => {
   });
 });
 
-// 404处理
-app.use((req, res) => {
-  res.status(404).json({ error: '路由不存在' });
+// API 404处理
+app.use('/api', (req, res) => {
+  res.status(404).json({ error: 'API 路由不存在' });
 });
+
+// SPA 路由处理 - 所有非 API 请求返回 index.html
+if (fs.existsSync(frontendDistPath)) {
+  app.get('*', (req, res) => {
+    res.sendFile(path.join(frontendDistPath, 'index.html'));
+  });
+} else {
+  // 如果没有前端构建文件，返回 404
+  app.use((req, res) => {
+    res.status(404).json({ error: '路由不存在' });
+  });
+}
 
 // 启动服务器 - 监听所有网络接口以支持局域网访问
 const HOST = process.env.HOST || '0.0.0.0';

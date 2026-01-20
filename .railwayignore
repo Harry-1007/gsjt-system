@@ -1,0 +1,28 @@
+# Railway ignore file
+# 类似于 .gitignore，但用于 Railway 构建
+
+# 开发文件
+*.bat
+*.md
+!README.md
+!Railway部署指南.md
+
+# 文档
+GitHub推送指南.md
+Git推送命令详解.md
+解决Git推送问题.md
+部署检查清单.md
+公网部署指南.md
+
+# 临时文件
+node_modules/
+*.log
+*.tmp
+
+# 前端开发文件（构建后会生成 dist）
+frontend/node_modules/
+frontend/.env.local
+
+# 后端开发文件
+backend/node_modules/
+backend/.env.local

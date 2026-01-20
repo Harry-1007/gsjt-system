@@ -6,21 +6,38 @@ const path = require('path');
 require('dotenv').config({ path: path.join(__dirname, '..', '.env') });
 
 // PostgreSQL 连接池配置
-// 确保密码是字符串类型，并去除前后空格
-const dbPassword = process.env.DB_PASSWORD 
-  ? String(process.env.DB_PASSWORD).trim() 
-  : '';
+// 优先使用 DATABASE_URL（Railway、Heroku 等平台提供）
+// 如果没有，则使用单独的配置项
+let poolConfig;
 
-const pool = new Pool({
-  host: process.env.DB_HOST || 'localhost',
-  port: parseInt(process.env.DB_PORT) || 5432,
-  database: process.env.DB_NAME || 'gsjt',
-  user: process.env.DB_USER || 'postgres',
-  password: dbPassword,
-  max: 20, // 最大连接数
-  idleTimeoutMillis: 30000,
-  connectionTimeoutMillis: 2000,
-});
+if (process.env.DATABASE_URL) {
+  // 使用 DATABASE_URL（Railway 等平台）
+  poolConfig = {
+    connectionString: process.env.DATABASE_URL,
+    ssl: process.env.NODE_ENV === 'production' ? { rejectUnauthorized: false } : false,
+    max: 20,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 2000,
+  };
+} else {
+  // 使用单独的配置项
+  const dbPassword = process.env.DB_PASSWORD 
+    ? String(process.env.DB_PASSWORD).trim() 
+    : '';
+  
+  poolConfig = {
+    host: process.env.DB_HOST || 'localhost',
+    port: parseInt(process.env.DB_PORT) || 5432,
+    database: process.env.DB_NAME || 'gsjt',
+    user: process.env.DB_USER || 'postgres',
+    password: dbPassword,
+    max: 20,
+    idleTimeoutMillis: 30000,
+    connectionTimeoutMillis: 2000,
+  };
+}
+
+const pool = new Pool(poolConfig);
 
 // 测试连接
 pool.on('connect', () => {
