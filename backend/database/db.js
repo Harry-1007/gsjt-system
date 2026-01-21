@@ -78,8 +78,15 @@ async function initDatabase() {
         try {
           await pool.query(statement);
         } catch (err) {
-          // 忽略已存在的表/索引错误
-          if (!err.message.includes('already exists') && !err.message.includes('duplicate')) {
+          // 忽略已存在的表/索引错误（PostgreSQL 和 SQLite 的错误消息格式）
+          const errorMsg = err.message || '';
+          const isIgnorableError = 
+            errorMsg.includes('already exists') || 
+            errorMsg.includes('duplicate') ||
+            errorMsg.includes('relation') && errorMsg.includes('already exists') ||
+            err.code === '42P07'; // PostgreSQL: duplicate_table
+          
+          if (!isIgnorableError) {
             console.warn('执行 SQL 语句时出现警告:', err.message);
           }
         }

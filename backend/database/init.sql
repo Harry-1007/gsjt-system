@@ -40,5 +40,5 @@ CREATE TABLE IF NOT EXISTS candidate_results (
   answers JSONB
 );
 
--- 创建索引
-CREATE INDEX idx_scenario_options ON scenario_options(scenario_id);
+-- 创建索引（如果不存在）
+CREATE INDEX IF NOT EXISTS idx_scenario_options ON scenario_options(scenario_id);
