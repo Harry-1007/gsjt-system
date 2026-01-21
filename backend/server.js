@@ -98,7 +98,7 @@ const HOST = process.env.HOST || '0.0.0.0';
 let server;
 
 try {
-  server = app.listen(PORT, HOST, () => {
+  server = app.listen(PORT, HOST, async () => {
     console.log(`服务器运行在 http://${HOST}:${PORT}`);
     console.log(`本地访问: http://localhost:${PORT}`);
     // 获取本机IP地址
@@ -119,6 +119,25 @@ try {
       }
     } catch (ipError) {
       console.warn('无法获取IP地址:', ipError.message);
+    }
+
+    // 自动检查并导入场景数据（如果数据库为空）
+    try {
+      const { all } = require('./database/db');
+      const scenarios = await all('SELECT COUNT(*) as count FROM scenarios');
+      const count = parseInt(scenarios[0]?.count || 0);
+      
+      if (count === 0) {
+        console.log('⚠️  数据库中没有场景数据，开始自动导入...');
+        const { importScenarios } = require('./database/importScenarios');
+        await importScenarios();
+        console.log('✅ 场景数据导入完成');
+      } else {
+        console.log(`✅ 数据库已有 ${count} 个场景，跳过导入`);
+      }
+    } catch (error) {
+      console.error('⚠️  检查/导入场景数据时出错:', error.message);
+      // 不阻止服务器启动，只是记录错误
     }
   });
 

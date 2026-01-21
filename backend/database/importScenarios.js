@@ -131,5 +131,11 @@ async function importScenarios() {
   }
 }
 
-importScenarios();
+// 如果直接运行此文件，则执行导入
+if (require.main === module) {
+  importScenarios();
+}
+
+// 导出函数供其他模块使用
+module.exports = { importScenarios };
 
