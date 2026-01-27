@@ -108,7 +108,7 @@ function Assessment() {
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-          <p className="text-gray-600">加载中...</p>
+          <p className="text-gray-600">載入中，請稍候…</p>
         </div>
       </div>
     );
@@ -119,14 +119,13 @@ function Assessment() {
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center p-4">
         <div className="text-center max-w-md bg-white rounded-lg shadow-lg p-6">
-          <p className="text-gray-600 mb-4 text-lg font-medium">没有可用的场景</p>
+          <p className="text-gray-600 mb-4 text-lg font-medium">暫時未能載入測試場景</p>
           <div className="text-sm text-gray-500 text-left mb-4 space-y-2">
-            <p className="font-semibold mb-2">可能的原因：</p>
+            <p className="font-semibold mb-2">可能原因包括：</p>
             <ul className="list-disc list-inside space-y-1 ml-2">
-              <li>后端服务器未运行（端口3001）</li>
-              <li>网络连接问题</li>
-              <li>防火墙阻止了端口3001</li>
-              <li>数据库中没有场景数据</li>
+              <li>評估系統暫時維護中</li>
+              <li>網絡連線不穩定，未能成功連接伺服器</li>
+              <li>資料庫中暫時沒有可用的場景數據</li>
             </ul>
           </div>
           <div className="text-xs text-gray-400 mt-4 p-2 bg-gray-50 rounded">
@@ -139,7 +138,7 @@ function Assessment() {
             }}
             className="mt-4 px-4 py-2 bg-primary text-white rounded-lg hover:bg-blue-700 transition"
           >
-            重新加载
+            重新嘗試載入
           </button>
         </div>
       </div>
@@ -152,11 +151,11 @@ function Assessment() {
   return (
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
-        {/* 进度条 */}
+        {/* 進度條 */}
         <div className="mb-6">
           <div className="flex justify-between items-center mb-2">
             <span className="text-sm font-medium text-gray-700">
-              场景 {currentIndex + 1} / {scenarios.length}
+              場景 {currentIndex + 1} / {scenarios.length}
             </span>
             <span className="text-sm text-gray-500">{Math.round(progress)}%</span>
           </div>
@@ -168,7 +167,7 @@ function Assessment() {
           </div>
         </div>
 
-        {/* 场景标题 */}
+        {/* 場景標題 */}
         <div className="mb-6">
           <div className="border-b-2 border-gray-200 pb-2 mb-4">
             <h2 className="text-xl font-semibold text-primary mb-2">
@@ -182,7 +181,7 @@ function Assessment() {
           </div>
         </div>
 
-        {/* 场景描述 */}
+        {/* 場景描述 */}
         <div className="mb-6">
           <p className="text-gray-700 leading-relaxed mb-3">
             {currentScenario.description_zh_hk || currentScenario.description}
@@ -194,7 +193,7 @@ function Assessment() {
           )}
         </div>
 
-        {/* 选项 */}
+        {/* 作答選項 */}
         <div className="space-y-3 mb-6">
           {currentScenario.options.map((option) => (
             <div
@@ -231,13 +230,13 @@ function Assessment() {
           ))}
         </div>
 
-        {/* 下一步按钮 */}
+        {/* 下一步按鈕 */}
         <button
           onClick={handleNext}
           disabled={!selectedOption}
           className="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition"
         >
-          {currentIndex < scenarios.length - 1 ? '下一个场景' : '完成评估'}
+          {currentIndex < scenarios.length - 1 ? '下一個場景' : '完成整體評估'}
         </button>
       </div>
     </div>

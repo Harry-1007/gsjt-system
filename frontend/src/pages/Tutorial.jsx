@@ -6,13 +6,14 @@ function Tutorial() {
   const navigate = useNavigate();
 
   const sampleScenario = {
-    title: '示例场景',
-    description: '这是一个示例场景。请仔细阅读情况描述，选择最能代表您会如何回应的选项。',
+    title: '示例場景',
+    description:
+      '以下是示例場景，讓您熟悉作答方式。請先閱讀情境描述，然後從選項中選出最符合您做法的一項。',
     options: [
-      { id: 'A', text: '选项A：第一个响应选项' },
-      { id: 'B', text: '选项B：第二个响应选项' },
-      { id: 'C', text: '选项C：第三个响应选项' },
-      { id: 'D', text: '选项D：第四个响应选项' },
+      { id: 'A', text: '選項 A：主動了解情況並尋求合適的協助。' },
+      { id: 'B', text: '選項 B：暫時忽略問題，等待他人處理。' },
+      { id: 'C', text: '選項 C：立即單獨作出決定，不與任何人商量。' },
+      { id: 'D', text: '選項 D：先收集更多資料，再按程序處理。' },
     ],
   };
 
@@ -20,7 +21,7 @@ function Tutorial() {
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-3xl mx-auto bg-white rounded-lg shadow-lg p-8">
         <h1 className="text-2xl font-bold text-primary mb-6 text-center">
-          教程：示例场景
+          作答示例：如何完成一個場景
         </h1>
 
         <div className="mb-6">
@@ -62,7 +63,7 @@ function Tutorial() {
           disabled={!selectedOption}
           className="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-blue-700 disabled:bg-gray-300 disabled:cursor-not-allowed transition"
         >
-          继续到正式评估
+          了解了，開始正式評估
         </button>
       </div>
     </div>

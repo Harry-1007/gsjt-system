@@ -22,25 +22,25 @@ function Completion() {
             </svg>
           </div>
           <h1 className="text-3xl font-bold text-primary mb-2">
-            评估完成
+            評估已完成
           </h1>
         </div>
 
         <div className="text-gray-700 space-y-4 mb-8">
           <p>
-            感谢您完成情境判断测试。
+            感謝您完成是次情境判斷測試。
           </p>
           <p>
-            您的回答已记录，将由评估小组作为PMP实习项目选拔流程的一部分进行审核。
+            您的作答結果已成功記錄，將由相關評估小組作為 PMP 實習計劃甄選流程的一部分加以審閱。
           </p>
         </div>
 
         <div className="bg-gray-50 rounded-lg p-6 mb-8 text-left">
-          <h2 className="text-xl font-semibold mb-4 text-gray-900">下一步</h2>
+          <h2 className="text-xl font-semibold mb-4 text-gray-900">下一步安排</h2>
           <ul className="space-y-2 text-gray-700">
-            <li>• 您将很快收到确认邮件</li>
-            <li>• 结果将在5-7个工作日内审核</li>
-            <li>• 进一步通知将发送至您注册的邮箱地址</li>
+            <li>• 您將於稍後收到確認電郵（如適用）</li>
+            <li>• 評估結果一般會於 5–7 個工作天內完成審閱</li>
+            <li>• 其後的甄選安排及通知，將發送至您所登記的電郵地址</li>
           </ul>
         </div>
 
@@ -51,11 +51,11 @@ function Completion() {
           }}
           className="w-full bg-primary text-white py-3 rounded-lg font-medium hover:bg-blue-700 transition"
         >
-          返回首页
+          返回首頁
         </button>
 
         <p className="mt-6 text-sm text-gray-500">
-          如有问题，请联系：recruitment@pmp.gov.hk
+          如有查詢，歡迎電郵至：recruitment@pmp.gov.hk
         </p>
       </div>
     </div>
