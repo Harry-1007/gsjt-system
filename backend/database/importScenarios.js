@@ -7,19 +7,9 @@ const { run, all } = require('./db');
 
 async function importScenarios() {
   try {
-    // 读取scenarios.json（优先读取backend文件夹的，如果不存在则读取根目录的）
-    const backendPath = path.join(__dirname, '../scenarios.json');
-    const rootPath = path.join(__dirname, '../../scenarios.json');
-    
-    let scenariosPath;
-    if (fs.existsSync(backendPath)) {
-      scenariosPath = backendPath;
-      console.log(`使用backend文件夹文件: ${scenariosPath}`);
-    } else if (fs.existsSync(rootPath)) {
-      scenariosPath = rootPath;
-      console.log(`使用根目录文件: ${scenariosPath}`);
-    } else {
-      throw new Error(`找不到 scenarios.json 文件！已检查: ${backendPath} 和 ${rootPath}`);
+    const scenariosPath = path.join(__dirname, '../scenarios.json');
+    if (!fs.existsSync(scenariosPath)) {
+      throw new Error(`找不到 scenarios.json，请确保存在: ${scenariosPath}`);
     }
     
     const scenariosData = JSON.parse(
