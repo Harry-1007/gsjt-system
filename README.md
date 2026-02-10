@@ -92,6 +92,4 @@ VITE_API_URL=http://localhost:3001/api
 - **前端**: React, Vite, Tailwind CSS
 - **数据库**: PostgreSQL
 
-## 许可证
 
-[您的许可证]
